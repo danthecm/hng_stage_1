@@ -1,0 +1,19 @@
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: end;
+    justify-content: end;
+    padding: 48px 112px;
+    text-align: center;
+}
+
+footer p {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #667085;
+}
+
+footer img:last-child {
+    justify-self: end;
+}
