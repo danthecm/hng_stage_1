@@ -35,3 +35,11 @@ main h2 {
     line-height: 28px;
     margin: 24px 0;
 }
+.social_links {
+    width: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+    margin: 48px auto;
+}

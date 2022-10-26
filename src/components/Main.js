@@ -1,4 +1,6 @@
 import profile_img from "../images/profile_img.png";
+import slack_logo from "../images/slack.png";
+import github_logo from "../images/github.png";
 import classes from "./Main.module.css"
 
 const Main = () => {
@@ -41,6 +43,11 @@ const Main = () => {
                 <a>
                     <p>Design Books</p>
                 </a>
+            </div>
+
+            <div className={classes.social_links}>
+                <img src={slack_logo} alt="slack" />
+                <img src={github_logo} alt="github" />
             </div>
 
         </main>
