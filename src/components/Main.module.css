@@ -1,0 +1,17 @@
+main {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 112px;
+    text-align: center;
+    gap: 0;
+}
+
+main img {
+    margin: auto auto;
+}
+
+main h2 {
+    margin-top: 24px;
+}
