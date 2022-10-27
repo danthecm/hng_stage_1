@@ -81,4 +81,7 @@ main h2 {
   .card {
     font-size: 14px;
   }
+  .share_btn {
+    display: none;
+  }
 }
