@@ -1,12 +1,18 @@
-import profile_img from "../images/profile_img.png";
 import slack_logo from "../images/slack.png";
 import github_logo from "../images/github.png";
 import classes from "./Main.module.css";
+import share_btn from "../images/share-button.png";
+import camera from "../images/camera.png"
+import { useState } from "react";
 
 const Main = () => {
+    const [showCamera, setShowCamera] = useState(false)
+
   return (
     <main id="link">
-      <img id="profile__img" src={profile_img} alt="profile" />
+      <img className={classes.share_btn} src={share_btn} alt="share-btn" />
+      <div id="profile__img" onMouseLeave={() => setShowCamera(false)} onMouseEnter={() => setShowCamera(true)} className={classes.profile_img}></div>
+      {showCamera && <img className={classes.camera} src={camera} alt="camera-btn" />}
       <h2>Annette Black</h2>
 
       <a
