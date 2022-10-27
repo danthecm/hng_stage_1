@@ -38,3 +38,15 @@ main h2 {
   justify-content: center;
   margin: 48px auto;
 }
+
+@media screen and (max-width: 480px) {
+  main {
+    padding: 44px 16px;
+  }
+  main h2 {
+    margin: 24px 0 32px 0;
+  }
+  .card {
+    font-size: 14px;
+  }
+}
