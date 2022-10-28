@@ -121,6 +121,6 @@ main h2 {
   }
   .mobile {
     display: flex;
-    margin-right: 40px;
+    margin-right: 2px;
   }
 }
