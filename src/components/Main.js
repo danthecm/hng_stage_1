@@ -26,7 +26,7 @@ const Main = () => {
       {showCamera && (
         <img className={classes.camera} src={camera} alt="camera-btn" />
       )}
-      <h2>Annette Black</h2>
+      <h2>Victory Daniel</h2>
       <p style={{ display: "none" }} id="slack">
         CM
       </p>
