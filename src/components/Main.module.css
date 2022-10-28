@@ -64,12 +64,47 @@ main h2 {
   align-items: center;
   justify-content: center;
   margin: 48px auto;
+  cursor: pointer;
 }
 
 .share_btn {
   margin-right: 284px;
   margin-bottom: -22px;
 }
+
+.share_svg {
+  margin: auto auto;
+  display: flex;
+  margin-right: 270px;
+  margin-bottom: -22px;
+  width: 40px;
+  height: 40px;
+  align-items: center;
+  background: #ffffff;
+  border: 1px dashed #d0d5dd;
+  border-radius: 20px;
+}
+.share_svg img {
+  opacity: 50%;
+}
+
+.share_svg:hover {
+  background: #f9fafb;
+  border: 1px dashed #d0d5dd;
+}
+.share_svg:hover img {
+  opacity: 100%;
+}
+.mobile {
+  display: none;
+}
+
+.share_svg:active {
+  background: #ffffff;
+  border: 1px dashed #d0d5dd;
+  box-shadow: 0px 0px 0px 4px #f2f4f7;
+}
+
 
 @media screen and (max-width: 480px) {
   main {
@@ -81,7 +116,11 @@ main h2 {
   .card {
     font-size: 14px;
   }
-  .share_btn {
+  .share_svg {
     display: none;
+  }
+  .mobile {
+    display: flex;
+    margin-right: 40px;
   }
 }
