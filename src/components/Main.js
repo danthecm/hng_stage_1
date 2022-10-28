@@ -13,6 +13,10 @@ const Main = () => {
     <main id="link">
       <div className={classes.share_svg}>
         <img src={share_svg} alt="share-btn" />
+        <div className={classes.tip}>
+        <p className={classes.tooltip}>Share Link</p>
+        <p className={classes.tooltip__after}></p>
+      </div>
       </div>
       <div className={`${classes.share_svg}  ${classes.mobile}`}>
         <img src={menu_svg} alt="share-btn" />
