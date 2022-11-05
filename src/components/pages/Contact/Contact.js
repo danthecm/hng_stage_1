@@ -10,7 +10,7 @@ const Contact = () => {
       <h1>Contact Me</h1>
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
       <form onSubmit={submitHandler}>
-        <div className="card">
+        <div>
           <label htmlFor="First Name">First Name</label>
           <input
             type="text"
@@ -19,7 +19,7 @@ const Contact = () => {
             placeholder="Enter your first name"
           />
         </div>
-        <div className="card">
+        <div>
         <label htmlFor="Last Name">Last Name</label>
           <input
             type="text"
@@ -29,7 +29,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className="card">
+        <div>
           <label htmlFor="Email">Email</label>
           <input
             type="email"
@@ -39,7 +39,7 @@ const Contact = () => {
           />
         </div>
 
-        <div className="card">
+        <div>
           <label htmlFor="Message">Message</label>
           <textarea
             name="Message"
