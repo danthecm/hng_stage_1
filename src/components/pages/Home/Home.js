@@ -1,12 +1,12 @@
-import slack_logo from "../images/slack.png";
-import github_logo from "../images/github.png";
-import classes from "./Main.module.css";
-import share_svg from "../images/Icon.svg";
-import menu_svg from "../images/icon-2.svg";
-import camera from "../images/camera.png";
+import slack_logo from "../../../images/slack.png";
+import github_logo from "../../../images/github.png";
+import classes from "./Home.module.css";
+import share_svg from "../../../images/Icon.svg";
+import menu_svg from "../../../images/icon-2.svg";
+import camera from "../../../images/camera.png";
 import { useState } from "react";
 
-const Main = () => {
+const Home = () => {
   const [showCamera, setShowCamera] = useState(false);
 
   return (
@@ -102,4 +102,4 @@ const Main = () => {
     </main>
   );
 };
-export default Main;
+export default Home;

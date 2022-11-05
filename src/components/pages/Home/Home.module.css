@@ -13,7 +13,7 @@ main img {
 }
 
 .profile_img {
-  background-image: url("../images/profile_img.png");
+  background-image: url("../../../images/profile_img.png");
   width: 88px;
   height: 88px;
   margin: auto auto;
@@ -25,7 +25,7 @@ main img {
       rgba(52, 64, 84, 0.65),
       rgba(52, 64, 84, 0.65)
     ),
-    url("../images/profile_img.png");
+    url("../../../images/profile_img.png");
   border-radius: 275px;
 }
 

@@ -1,6 +1,6 @@
 import classes from "./Footer.module.css";
-import zuri_logo from "../images/zuri_training.png";
-import I4G_logo from "../images/I4G.png";
+import zuri_logo from "../../images/zuri_training.png";
+import I4G_logo from "../../images/I4G.png";
 
 const Footer = () => {
     return (
