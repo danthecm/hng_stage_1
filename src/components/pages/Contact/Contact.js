@@ -1,11 +1,15 @@
 import classes from "./Contact.Module.css";
 
 const Contact = () => {
+    const submitHandler = (event) => {
+        event.preventDefault();
+    }
+
   return (
     <section className={classes.section}>
       <h1>Contact Me</h1>
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
-      <form method="post">
+      <form onSubmit={submitHandler}>
         <div className="firstLast">
           <label htmlFor="First Name">First Name</label>
           <label htmlFor="Last Name">Last Name</label>
