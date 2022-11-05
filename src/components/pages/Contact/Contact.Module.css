@@ -164,13 +164,13 @@ form div:nth-child(n + 3) {
     line-height: 28px;
   }
   form {
-    grid-template-columns: 340px;
+    grid-template-columns: 327px;
   }
   form div:nth-child(n + 1) {
     grid-column: 1;
   }
   input {
-    width: 343px;
+    width: 327px;
     height: 44px;
   }
   textarea {
