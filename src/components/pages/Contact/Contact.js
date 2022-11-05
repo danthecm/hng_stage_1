@@ -1,4 +1,4 @@
-import classes from "./Contact.Module.css";
+import classes from "./Contact.module.css";
 
 const Contact = () => {
     const submitHandler = (event) => {
@@ -47,7 +47,7 @@ const Contact = () => {
             placeholder="Send me a message and I'll reply you as soon as possible..."></textarea>
         </div>
 
-        <div className="checkboxContainer">
+        <div className={classes.checkboxContainer}>
             <input type="checkbox" name="checkbox" id="checkbox" />
             <label htmlFor="checkbox">You agree to providing your data to CM who may contact you.</label>
         </div>

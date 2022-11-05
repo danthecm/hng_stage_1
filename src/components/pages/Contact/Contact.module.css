@@ -62,7 +62,7 @@ textarea:focus {
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
 }
 
-#checkbox {
+.checkboxContainer input {
   cursor: pointer;
   opacity: 0;
   position: absolute;
@@ -131,18 +131,13 @@ form div:nth-child(n + 3) {
   cursor: pointer;
 }
 
-/* .checkboxContainer label:hover::before,
-#checkbox:hover + label::before{
-  border: 1px solid #84caff;
-  box-shadow: 0px 0px 0px 4px #d1e9ff;
-} */
 
-#checkbox:focus + label::before {
+.checkboxContainer input:focus + label::before {
   border: 1px solid #84caff;
   box-shadow: 0px 0px 0px 4px #d1e9ff;
 }
 
-#checkbox:checked + label::before {
+.checkboxContainer input:checked + label::before {
   content: "\002714";
   background: #f9fafb;
   border: 1px solid #1570ef;
