@@ -5,7 +5,7 @@ const Contact = () => {
     <section className={classes.section}>
       <h1>Contact Me</h1>
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
-      <form>
+      <form method="post">
         <div className="firstLast">
           <label htmlFor="First Name">First Name</label>
           <label htmlFor="Last Name">Last Name</label>
@@ -43,7 +43,7 @@ const Contact = () => {
 
         <div className="checkboxContainer">
             <input type="checkbox" name="checkbox" id="checkbox" />
-            <p>You agree to providing your data to CM who may contact you.</p>
+            <label htmlFor="checkbox">You agree to providing your data to CM who may contact you.</label>
         </div>
 
         <button type="submit">Send message</button>

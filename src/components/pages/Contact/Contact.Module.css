@@ -48,6 +48,9 @@ input {
   border-radius: 8px;
 }
 
+input:focus {
+  outline-color: #84caff;
+}
 textarea {
   padding: 12px 14px;
   width: 720px;
@@ -62,14 +65,16 @@ textarea {
   resize: none;
 }
 
-#checkbox {
-  width: 20px;
-  height: 20px;
-
+textarea:focus {
   background: #ffffff;
+  outline: 1px solid #84caff;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
+}
 
-  border: 1px solid #d0d5dd;
-  border-radius: 6px;
+#checkbox {
+  cursor: pointer;
+  opacity: 0;
+  position: absolute;
 }
 
 button {
@@ -88,7 +93,21 @@ button {
 }
 
 button:hover {
-    background: #175CD3;
+  background: #175cd3;
+}
+
+button:focus {
+  background: #1570ef;
+  border: 1px solid #1570ef;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05), 0px 0px 0px 4px #d1e9ff;
+}
+
+button:disabled {
+  background: #b2ddff;
+  border: 1px solid #b2ddff;
+
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
 }
 
 .card {
@@ -99,19 +118,45 @@ button:hover {
   margin-bottom: 24px;
 }
 
-.checkboxContainer {
-  display: grid;
-  grid-template-columns: 1fr 22fr;
+.checkboxContainer label {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  text-align: start;
   margin-bottom: 32px;
-}
-
-.checkboxContainer p {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #475467;
-  display: inline-block;
+}
+
+.checkboxContainer label::before {
+  content: "";
+  width: 1em;
+  height: 1em;
+  background: #ffffff;
+
+  border: 1px solid #d0d5dd;
+  border-radius: 6px;
+  margin-right: 0.5em;
+  cursor: pointer;
+}
+
+/* .checkboxContainer label:hover::before,
+#checkbox:hover + label::before{
+  border: 1px solid #84caff;
+  box-shadow: 0px 0px 0px 4px #d1e9ff;
+} */
+
+#checkbox:focus + label::before {
+  border: 1px solid #84caff;
+  box-shadow: 0px 0px 0px 4px #d1e9ff;
+}
+
+#checkbox:checked + label::before {
+  content: "\002714";
+  background: #f9fafb;
+  border: 1px solid #1570ef;
+  border-radius: 6px;
+  color: #1570ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
