@@ -14,9 +14,9 @@ const Main = () => {
       <div className={classes.share_svg}>
         <img src={share_svg} alt="share-btn" />
         <div className={classes.tip}>
-        <p className={classes.tooltip}>Share Link</p>
-        <p className={classes.tooltip__after}></p>
-      </div>
+          <p className={classes.tooltip}>Share Link</p>
+          <p className={classes.tooltip__after}></p>
+        </div>
       </div>
       <div className={`${classes.share_svg}  ${classes.mobile}`}>
         <img src={menu_svg} alt="share-btn" />
@@ -84,6 +84,15 @@ const Main = () => {
         href="https://books.zuri.team/design-rules"
       >
         <p>Design Books</p>
+      </a>
+
+      <a
+        id="contact"
+        title="Contact me to get started"
+        className={classes.card}
+        href="/contact"
+      >
+        <p>Contact Me</p>
       </a>
 
       <div className={classes.social_links}>
