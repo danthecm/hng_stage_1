@@ -164,7 +164,7 @@ form div:nth-child(n + 3) {
     line-height: 28px;
   }
   form {
-    grid-template-columns: 343px;
+    grid-template-columns: 340px;
   }
   form div:nth-child(n + 1) {
     grid-column: 1;
