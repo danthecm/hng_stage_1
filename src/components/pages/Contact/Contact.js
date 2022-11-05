@@ -11,7 +11,7 @@ const Contact = () => {
       <p>Hi there, contact me to ask me about anything you have in mind.</p>
       <form onSubmit={submitHandler}>
         <div>
-          <label htmlFor="First Name">First Name</label>
+          <label htmlFor="first_name">First Name</label>
           <input
             type="text"
             name="First Name"
@@ -20,7 +20,7 @@ const Contact = () => {
           />
         </div>
         <div>
-        <label htmlFor="Last Name">Last Name</label>
+        <label htmlFor="last_name">Last Name</label>
           <input
             type="text"
             name="Last Name"
@@ -30,7 +30,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <label htmlFor="Email">Email</label>
+          <label htmlFor="email">Email</label>
           <input
             type="email"
             name="Email"
@@ -40,7 +40,7 @@ const Contact = () => {
         </div>
 
         <div>
-          <label htmlFor="Message">Message</label>
+          <label htmlFor="message">Message</label>
           <textarea
             name="Message"
             id="message"
@@ -52,7 +52,7 @@ const Contact = () => {
             <label htmlFor="checkbox">You agree to providing your data to CM who may contact you.</label>
         </div>
 
-        <button type="submit">Send message</button>
+        <button id="btn__submit" type="submit">Send message</button>
       </form>
     </section>
   );
